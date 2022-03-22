@@ -1,0 +1,260 @@
+body{
+    margin:0;
+    padding: 0;
+}
+.headers{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    &_details{
+        display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(46, 44, 44);
+    }
+  &_img{
+      padding: 20px;
+      width: 150px;
+  }
+    &_bottom {
+        width: 100%;
+        height: 2px;
+        border: 1px solid white;
+        background-color: white;
+  }
+  &_title{
+    color: white;
+    background-color: rgb(46, 44, 44);
+    font-size: 20px;
+    font-family: $openSans;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-style: $bodoni;
+    @media(max-width:768px){
+        font-size: 0.5rem;
+    }
+  }
+}
+#headers_user {
+    color: white;
+    font-size: 25px;
+    padding-right: 20px;
+}
+#headers_question {
+    color: white;
+    font-size: 25px;
+    padding-right: 20px;
+}
+.banner{
+    clip-path: ellipse(85% 75% at 50% 10%);
+    position: relative;
+    margin-top: 80px;
+    &_img{
+        width:100%;
+    }
+    &_hero{
+        position:absolute;
+        top:0;
+        &_img{
+        width:45vw;
+        }
+    }
+}
+.abouts{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 10px;
+    &_heading{
+        font-size: 42px;
+        color:#6EABBF;
+    }
+    &_title{
+        font-size: 22px;
+        color:#6EABBF;
+        font-style: $font-bold;
+        font-weight: 700;
+    }
+    &_details{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width:100%;
+        @media (max-width:768px){
+            flex-direction: column;
+        }
+        &_video{
+            width:50%;
+            background-image: url("https://www.stlukesonline.org/~/media/stlukes/images/st-lukes-spine-roboto-mm.jpg?h=350&w=1140&la=en&hash=697E39A10688DCF71F9BA50F1DE9118411B8DCC7");
+            background-repeat:no-repeat;
+            background-size: cover;
+            position: relative;
+            min-height: 315px;
+            background-position: 50% 50%;
+            @media (max-width:768px){
+                width:100%;
+            }
+        }
+        &_para{
+            width:50%;
+            font-size: 25px;
+            background-color: whitesmoke;
+            box-sizing: border-box;
+            padding: 50px;
+            max-height: 315px;
+            color: $medium-dark-shed-cyan-blue;
+            @media (max-width:768px){
+                width:100%;
+                max-height: 100%;
+            }
+        }
+    }
+    &_heading1{
+    color:$cerrlean-frost;
+    font-style:$bodoni;
+    font-size: 36px;
+    font-weight: 500;
+    }
+    &_bottom {
+        width: 100%;
+        height: 2px;
+        border: 1px solid white;
+        background-color: white;
+  }
+  &_details{
+      font-size: 24px;
+      color: $cerrlean-frost;
+  }
+  &_para{
+      font-size: 24px;
+  }
+}
+hr{
+    border:1px solid $cerrlean-frost;
+    background-color: $cerrlean-frost;
+}
+.footers{
+    margin-top: 100px;
+    &_details{
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @media(max-width:768px){
+            flex-direction: column;
+        }
+    &_img{
+        background-color: black;
+        width:50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media(max-width:768px){
+            width: 100%;
+        }
+    }
+    &_para{
+        background-color: $kingly-cloud;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media(max-width:768px){
+            width: 100%;
+        }
+        &_para{
+            font-size: 12px;
+            padding: 10px;
+            font-family:$arimo;
+            font-weight: $font-bold;
+        }
+    }
+}
+&_footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: $black;
+    &_para{
+        font-size: 12px;
+        color: $white;
+        font-family: $openSans;
+        border-bottom: 2px solid $white;
+
+    }
+}
+}
+iframe{
+    display: none;
+    width:50%;
+    @media (max-width:768px){
+        width:100%;
+    }
+}
+#one{
+    position: absolute;
+    left:45%;
+    top:40%;
+    font-size: 50px;
+    color: $white;
+    cursor: pointer;
+}
+.locations{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &_head{
+        color:$cerrlean-frost;
+        font: 36px $bodoni ;
+        font-weight: 600;
+    }
+}
+.bottom{
+    width:100%;
+    max-width: 1080px;
+}
+#locations_filter_img{
+    cursor: pointer;
+    color: $cerrlean-frost;
+    font-size: 30px;
+}
+.headers_toggle{
+    width:150px;
+    display: flex;
+   flex-direction: column;
+ align-items: flex-end;
+   width:100%;
+       &_head{
+        border: 1px solid black;
+        padding: 10px;
+        background-color: white;
+        display: none;
+        &_para{
+            color:$cerrlean-frost;
+            border-bottom: 1px solid $cerrlean-frost;
+
+        }
+    }
+}
+#five{
+    color:$cerrlean-frost;
+  background-color: white;
+  padding: 10px;
+  font-size: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: none;
+  @media (max-width:768px){
+      display: block;
+  }
+}

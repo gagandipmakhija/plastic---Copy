@@ -1,0 +1,116 @@
+.contact{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    padding: 10px;
+    &_heading{
+        color:$paint-chip;
+        font-size: 48px;
+        font-family: $bodoni;
+        font-weight: $font-normal;
+        margin-top: 200px;
+    }
+    &_para{
+        margin-top: 50px;
+        font-size: 24px;
+        font-family: $arimo;
+        color: $black;
+        font-weight: $font-semi-bold;
+    }
+    &_details{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: row;
+        @media (max-width:768px){
+            flex-direction: column;
+        }
+        &_name{
+            margin-top: 20px;
+            &_label{
+                color: $cerulean-frost;
+                font-size: 20px;
+            }
+            &_input{
+                border:2px solid $grey44;
+                opacity: 53%;
+                border-radius: 5px;
+                width: 473px;
+                height: 31px;
+            }
+        }
+        &_email{
+            margin-top: 20px;
+            &_label1{
+                color: $cerulean-frost;
+                font-size: 20px;
+            }
+            &_input1{
+                border:2px solid $grey44;
+                opacity: 53%;
+                border-radius: 5px;
+                width: 473px;
+                height: 31px;
+            }
+        }
+        &_number{
+            margin-top: 20px;
+            &_label{
+                color: $cerulean-frost;
+                    font-size: 20px;
+            }
+            &_input{
+                border:2px solid $grey44;
+                opacity: 53%;
+                border-radius: 5px;
+                width: 473px;
+                height: 31px;
+            }
+        }
+        &_services{
+            margin-top: 20px;
+            position: relative;
+            &_label1{
+                color: $cerulean-frost;
+                    font-size: 20px;
+            }
+            &_input1{
+                border:2px solid $grey44;
+                opacity: 53%;
+                border-radius: 5px;
+                width: 473px;
+                height: 31px;
+                display: flex;
+               align-items: center;
+               justify-content: flex-end;
+            }
+            &_toggle{
+                border: 1px solid black;
+                border-top: 1px solid gray;
+                border-radius: 10px;
+                display: none;
+                position: absolute;
+                top: 27px;
+                background-color: white;
+                width: 100%;
+                &_para{
+                    color: gray;
+                    border-bottom: 2px solid gray;
+                    padding: 10px;
+                    font-size: 15px;
+                }
+                &_para1{
+                    color: gray;
+                    padding: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+.fa-chevron-down{
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
