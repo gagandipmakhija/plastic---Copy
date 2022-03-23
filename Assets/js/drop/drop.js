@@ -6,9 +6,17 @@ const drop=()=>{
         $(".contact_details_services_toggle").on("mouseleave",function(){
             $(".contact_details_services_toggle").css("display","none")
         })
+        
     })
     $(".contact_details_services_toggle_para").on("click",function(){
-        $(".contact_details_services_toggle").html($(this.html));
+        $(".text").text($(this).text());
+        $(".contact_details_services_toggle").css("display","none")
+        console.log("working2");
+    })
+    $(".contact_details_services_toggle_para1").on("click",function(){
+        $(".text").text($(this).text());
+        $(".contact_details_services_toggle").css("display","none")
+     
     })
 }
 export default drop;

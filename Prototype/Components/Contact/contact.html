@@ -3,38 +3,43 @@
     <hr />
     <p class="contact_para">Please provide any information that would be relevant to your interest and times available
         for us to contact you.</p>
+        <form>
     <div class="contact_details">
         <div class="contact_details_name">
-            <form>
+            
                 <label class="contact_details_name_label" for="name">Your name</label>
                 <br />
                 <input id="name" class="contact_details_name_input" type="text" value="" />
-            </form>
+            
         </div>
         <div class="contact_details_email">
-            <form>
+            
                 <label class="contact_details_email_label1" for="email">Email</label>
                 <br />
                 <input id="email" class="contact_details_email_input1" type="email" value="" />
-            </form>
+            
         </div>
         </div>
     <div class="contact_details">
         <div class="contact_details_number">
-            <form>
+            
                 <label class="contact_details_number_label" for="number">Phone Number</label>
                 <br />
                 <input id="number" class="contact_details_number_input" type="tel" name="telephone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12" title="Ten digits code" required/>
-            </form>
+            
         </div>
         <div class="contact_details_services">
-            <form>
+            
                 <label class="contact_details_services_label1" for="services">Service of Interest</label>
-            </form>
+            
             <div class="contact_details_services_input1">
+                <div class="text" style="display: block;"></div>
                 <i class="fas fa-chevron-down"></i>
+                
             </div>
-            <div class="contact_details_services_toggle" >
+            
+            <div class="contact_details_services_toggle">
+                
                <p class="contact_details_services_toggle_para" >Face</p>
                <p class="contact_details_services_toggle_para" >Breast</p>
                <p class="contact_details_services_toggle_para" >Body</p>
@@ -44,13 +49,14 @@
         </div>
     </div> 
     <div class="contact_additional">
-        <form>
+        
             <label class="contact_additional_info" for="information">Additional Information</label>
             <br/>
             <textarea id="information" class="contact_additional_area"></textarea>
-        </form>
+        
     </div> 
 <button class="contact_button">Submit</button>
+</form>
 <br/>
 <br/>
 <br/>
