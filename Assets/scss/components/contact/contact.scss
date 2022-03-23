@@ -37,7 +37,7 @@
                 opacity: 53%;
                 border-radius: 5px;
                 width: 473px;
-                height: 31px;
+                height: 50px;
             }
         }
         &_email{
@@ -51,7 +51,7 @@
                 opacity: 53%;
                 border-radius: 5px;
                 width: 473px;
-                height: 31px;
+                height: 50px;
             }
         }
         &_number{
@@ -65,22 +65,24 @@
                 opacity: 53%;
                 border-radius: 5px;
                 width: 473px;
-                height: 31px;
+                height: 50px;
             }
         }
         &_services{
             margin-top: 20px;
             position: relative;
             &_label1{
-                color: $cerulean-frost;
+                color: $paint-chip;
                     font-size: 20px;
+                    font-weight: $font-semi-bold;
+                    font-family: $openSans;
             }
             &_input1{
                 border:2px solid $grey44;
                 opacity: 53%;
                 border-radius: 5px;
                 width: 473px;
-                height: 31px;
+                height: 50px;
                 display: flex;
                align-items: center;
                justify-content: flex-end;
@@ -94,6 +96,7 @@
                 top: 27px;
                 background-color: white;
                 width: 100%;
+                z-index: 5;
                 &_para{
                     color: gray;
                     border-bottom: 2px solid gray;
@@ -106,6 +109,40 @@
                     font-size: 15px;
                 }
             }
+        }
+    }
+    &_additional{
+        margin-top: 20px;
+        margin-left: 40px;
+
+        &_info{
+            color:$paint-chip;
+            font-weight: $font-bold;
+            font-size: 20px;
+        }
+        &_area{
+            border: 2px solid $grey44;
+            opacity: 53%;
+            width:970px;
+            height:200px;
+            border-radius: 5px;
+            @media (max-width:768px){
+                width: 500px;
+            }
+        }
+    }
+    &_button{
+        background-color: $cerrlean-frost;
+        border: none;
+        color:white;
+        font-size: 30px;
+        opacity: 100%;
+        border-radius: 5px;
+        padding:10px 150px 10px 150px;
+        margin-left: 30%;
+        margin-top: 50px;
+        @media (max-width:768px){
+            margin-left:15%
         }
     }
 }
