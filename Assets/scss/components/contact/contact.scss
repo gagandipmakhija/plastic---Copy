@@ -141,8 +141,48 @@
         padding:10px 150px 10px 150px;
         margin-left: 30%;
         margin-top: 50px;
+        cursor: pointer;
         @media (max-width:768px){
             margin-left:15%
+        }
+    }
+    &_form{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @media (max-width:768px){
+            flex-direction: column;
+            height: 100%;
+        }
+        &_details{
+            padding: 10px;
+            &_head{
+                color:$grey44;
+                font-size: 22px;
+                font-weight: $font-bold;
+                padding: 5px;
+            }
+            &_head1{
+                color:$grey44;
+                font-size: 22px;
+                font-weight: $font-bold;
+                padding: 5px;
+                margin-left: 30px;
+            }
+            &_number{
+                color:$grey44;
+                font-size: 22px;
+                padding: 5px;
+                margin-left: 10px;
+            }
+            &_info{
+                color:$grey44;
+                font-size: 22px;
+                padding: 5px;
+                
+            }
         }
     }
 }
