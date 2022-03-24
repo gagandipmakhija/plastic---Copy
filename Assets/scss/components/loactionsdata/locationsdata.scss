@@ -3,6 +3,9 @@
     max-width: 1080px;
 margin:auto;
 padding: 10px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
 &_town{
     &_para{
         font-size: 17px;
@@ -20,6 +23,11 @@ padding: 10px;
             margin-top: 10px;
             margin-left: 5px;
         }
+        &_number{
+            font-size: 17px;
+            color: $grey44;
+            margin-left: 10px;
+        }
     }
 }
 }
@@ -27,4 +35,8 @@ padding: 10px;
     color: $paint-chip;
 margin-top: 10px;
     font-size: 35px;
+}
+.fa-phone{
+    color: $paint-chip;
+        font-size: 25px;
 }
