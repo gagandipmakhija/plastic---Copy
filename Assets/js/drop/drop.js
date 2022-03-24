@@ -18,5 +18,6 @@ const drop=()=>{
         $(".contact_details_services_toggle").css("display","none")
      
     })
+  
 }
 export default drop;

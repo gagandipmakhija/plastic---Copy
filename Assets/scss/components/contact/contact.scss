@@ -66,6 +66,7 @@
                 border-radius: 5px;
                 width: 473px;
                 height: 50px;
+               
             }
         }
         &_services{
@@ -129,7 +130,7 @@
             height:200px;
             border-radius: 5px;
             @media (max-width:768px){
-                width: 500px;
+                width: 480px;
             }
         }
     }
@@ -145,7 +146,8 @@
         margin-top: 50px;
         cursor: pointer;
         @media (max-width:768px){
-            margin-left:15%
+            margin-left:7%;
+            padding: 10px 195px 10px 195px;
         }
     }
     &_form{
