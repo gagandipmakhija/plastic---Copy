@@ -1,12 +1,19 @@
 .locations_data{
-    width:100%;
-    max-width: 1080px;
-margin:auto;
+    
+    // max-width: 1080px;
+margin-left: 20%;
+margin-right: 20%;
+flex-direction: row;
 padding: 10px;
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
+margin-top: 50px;
+@media (max-width:768px){
+    flex-direction: column;
+}
 &_town{
+    width: 50%;
     &_para{
         font-size: 17px;
         color:$paint-chip;
@@ -40,3 +47,41 @@ margin-top: 10px;
     color: $paint-chip;
         font-size: 25px;
 }
+.locations_data1{
+  
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    flex-direction: row;
+    @media (max-width:768px){
+        flex-direction: column;
+    }
+    &_town{
+        &_para{
+            font-size: 17px;
+            color:$paint-chip;
+            font-family: $openSans;
+            font-weight: $font-bold
+        }
+        &_details{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            &_info{
+                font-size: 17px;
+                color: $grey44;
+                margin-top: 10px;
+                margin-left: 5px;
+            }
+            &_number{
+                font-size: 17px;
+                color: $grey44;
+                margin-left: 10px;
+            }
+        }
+    }
+    }

@@ -3,6 +3,7 @@
     max-width: 1080px;
     margin: auto;
     padding: 10px;
+    margin-top: -100px;
     &_heading{
         color:$paint-chip;
         font-size: 48px;
@@ -149,6 +150,9 @@
             margin-left:7%;
             padding: 10px 195px 10px 195px;
         }
+    }
+    &_button:hover{
+        background-color:$paint-chip;
     }
     &_form{
         display: flex;

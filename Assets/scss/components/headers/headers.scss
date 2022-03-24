@@ -205,9 +205,8 @@ iframe{
     cursor: pointer;
 }
 .locations{
-    width: 100%;
-    max-width: 1080px;
-    margin: auto;
+   margin-left: 20%;
+   margin-right: 20%;
     margin-top: 100px;
     padding: 10px;
     display: flex;
@@ -220,12 +219,12 @@ iframe{
     }
 }
 .bottom{
-    width:100%;
-    max-width: 1080px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 #locations_filter_img{
     cursor: pointer;
-    color: $cerrlean-frost;
+    color: $paint-chip;
     font-size: 30px;
 }
 .headers_toggle{
