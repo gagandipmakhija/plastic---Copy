@@ -211,7 +211,11 @@ iframe{
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
+    @media (max-width:768px){
+        margin:0;
+    }
     &_head{
         color:$paint-chip;
         font: 36px $bodoni ;
@@ -221,11 +225,16 @@ iframe{
 .bottom{
   margin-left: 20%;
   margin-right: 20%;
+  margin-top: -10px;
+  @media (max-width:768px){
+      margin:auto;
+  }
 }
 #locations_filter_img{
     cursor: pointer;
     color: $paint-chip;
     font-size: 30px;
+   
 }
 .headers_toggle{
     width:150px;
