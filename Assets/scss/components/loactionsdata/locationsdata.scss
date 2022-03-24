@@ -1,0 +1,30 @@
+.locations_data{
+    width:100%;
+    max-width: 1080px;
+margin:auto;
+padding: 10px;
+&_town{
+    &_para{
+        font-size: 17px;
+        color:$paint-chip;
+        font-family: $openSans;
+        font-weight: $font-bold
+    }
+    &_details{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        &_info{
+            font-size: 17px;
+            color: $grey44;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+    }
+}
+}
+.fa-map-marker{
+    color: $paint-chip;
+margin-top: 10px;
+    font-size: 35px;
+}
