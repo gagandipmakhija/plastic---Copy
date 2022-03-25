@@ -1,35 +1,90 @@
-.beforeafter{
+.beforeafter {
     width: 100%;
     height: 100%;
     max-width: 1080px;
-    margin:auto;
+    margin: auto;
     padding: 10px;
     margin-top: 100px;
-    &_heading{
+    &_heading {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        &_head{
+        &_head {
             font-size: 48px;
             color: $paint-chip;
             font-family: $bodoni;
             font-weight: $font-normal;
         }
     }
-    &_card{
-        border: 1px solid black;
-        width: 50%;
+    &_card {
+        width: 100%;
+        margin-top: 30px;
         display: flex;
-        &_first{
-            width: 25%;
+        justify-content: space-between;
+        flex-direction: row;
+        @media (max-width: 768px) {
+            flex-direction: column;
         }
-        &_second{
-            width: 25%;
+        &_first {
+            width: 48%;
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            &_heading {
+                background-color: #b2527f;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                &_head {
+                    color: white;
+                    font-size: 28px;
+                    font-family: $bodoni;
+                    font-weight: $font-bold;
+                }
+            }
+            &_img1 {
+                width: 100%;
+                display: flex;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &_button{
+        border:2px solid $bluebarry;
+        width: 340px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+        margin-left: 35%;
+        margin-top: 5%;
+    @media (max-width:768px){
+        margin: auto;
+        margin-top: 50px;
+    }
+        
+        &_heading{
+            &_para{
+                font-size: 24px;
+                font-family:$openSans;
+                font-weight: $font-normal;
+            }
         }
     }
 }
-#beforeafter_filter_img{
-    font-size: 40px;
-    color: $paint-chip;
-    margin-top: 18px;
+    #beforeafter_filter_img {
+        font-size: 40px;
+        color: $paint-chip;
+        margin-top: 18px;
+        cursor: pointer;
+    }
+.fa-angle-right{
+    color:#F745AD;
+    font-size: 25px;
 }
