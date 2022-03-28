@@ -19,5 +19,9 @@ const drop=()=>{
      
     })
   
+
+  $(".patitent_cards_filter_outlay").on("mouseover",function(){
+      $("div.patitent_cards_filter_img::before").css("background","none")
+  })
 }
 export default drop;
