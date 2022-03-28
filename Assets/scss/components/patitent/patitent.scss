@@ -1,0 +1,18 @@
+.patitent{
+    width: 100%;
+    max-width: 1080px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    &_heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_head{
+            font-size: 48px;
+            color: $paint-chip;
+            font-family: $bodoni;
+            font-weight: $font-normal;
+        }
+    }
+}
