@@ -90,7 +90,7 @@ div.patitent_cards_filter_img::before {
     position: absolute;
     inset: 0;
     z-index: 99;
-    background: #e630303d;
+    background: rgba($color: $bluebarry, $alpha: 0.6)
 }
 div.patitent_cards_filter_img:hover:before {
     content: '';
