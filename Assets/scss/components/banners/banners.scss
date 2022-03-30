@@ -1,0 +1,42 @@
+.banner{
+    background-image: url("../../../images/Hero.png");
+    min-height: 600px;
+    width: 100%;
+    clip-path: ellipse(116% 73% at 47% 10%);
+    &_title{
+        padding: 100px;
+        @media (max-width:768px){
+            padding: 90px;
+        }
+        &_look{
+            font-size: 80px;
+            font-family:$bodoni;
+            color: white;
+            @media (max-width:768px){
+                font-size: 50px;
+            }
+        }
+        &_younger{
+            font-size: 80px;
+            font-family: $bodoni;
+            color: rgb(102, 1, 1);
+            line-height: 34px;
+            @media (max-width:768px){
+                font-size: 50px;
+            }
+        }
+    }
+    &_button{
+        border:2px solid rgb(102, 1, 1);
+        padding: 15px 30px 15px 30px;
+        font-weight: $font-bold;
+        font-size: 17px;
+        margin-left: 100px;
+        cursor: pointer;
+        margin-top:-70px;
+    }
+    &_button:hover{
+        background-color:rgb(102, 1, 1);
+        color: white;
+    }
+}

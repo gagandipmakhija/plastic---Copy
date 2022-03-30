@@ -20,28 +20,76 @@ const drop=()=>{
     })
 
     document.querySelector(".header_nav_paras").addEventListener("mouseover",function(){
-        document.querySelector(".header_nav_paras_drop").style.display="block"
-        document.querySelector(".header_nav_paras_drop").addEventListener("mouseleave",function(){
+       document.querySelector(".header_nav_paras_drop").style.display="block"
+       document.querySelector(".header_nav_paras_drop").addEventListener("mouseleave",function(){
             document.querySelector(".header_nav_paras_drop").style.display="none"
-        })
+         })
     })
 
     
-    document.querySelector(".header_nav_paras1").addEventListener("mouseover",function(){
+     document.querySelector(".header_nav_paras1").addEventListener("mouseover",function(){
         document.querySelector(".header_nav_paras1_drop1").style.display="block"
         document.querySelector(".header_nav_paras1_drop1").addEventListener("mouseleave",function(){
-            document.querySelector(".header_nav_paras1_drop1").style.display="none"
-        })
-    })
+           document.querySelector(".header_nav_paras1_drop1").style.display="none"
+         })
+     })
 
       
-    document.querySelector(".header_nav_paras2").addEventListener("mouseover",function(){
-        document.querySelector(".header_nav_paras2_drop2").style.display="block"
+     document.querySelector(".header_nav_paras2").addEventListener("mouseover",function(){
+         document.querySelector(".header_nav_paras2_drop2").style.display="block"
         document.querySelector(".header_nav_paras2_drop2").addEventListener("mouseleave",function(){
-            document.querySelector(".header_nav_paras2_drop2").style.display="none"
-        })
-    })
+           document.querySelector(".header_nav_paras2_drop2").style.display="none"
+       })
+     })
    
+
+//     const him = document.querySelectorAll(".hidd33");
+
+// him.forEach( (e, index) =>{
+
+//   e.addEventListener("mouseover", () =>{
+
+//     show(index);
+
    
+
+// });
+
+// });
+
+
+
+
+// function show(index){
+
+//   const main = document.querySelectorAll(".pppa");
+
+//   for(var q = 0;q< main.length;q++){
+
+//     main[q].style.display = "none";
+
+//   }
+
+//   var y = main[index];
+
+//   y.addEventListener("mouseleave", () =>{
+
+//     y.style.display = "none";
+
+//   });
+
+//   if (y.style.display === "flex") {
+
+//         y.style.display = "none";  
+
+//       } else {
+
+//         y.style.display = "flex";
+
+//       }
+
+//   console.log(main[index]);
+
 }
+   
 export default drop;

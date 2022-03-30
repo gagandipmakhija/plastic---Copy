@@ -72,6 +72,7 @@ display: flex;
                 height: 100px;
                 width: 300px;
                 box-shadow: 1px 1px 8px #888888;
+                z-index: 5;
                 &_p3{
                     font-size: 15px;
                     font-weight: $font-semi-bold;
@@ -95,6 +96,7 @@ display: flex;
                 height: 280px;
                 width: 300px;
                 box-shadow: 1px 1px 8px #888888;
+                z-index: 5;
                 &_p2{
                     font-size: 15px;
                     font-weight: $font-semi-bold;
@@ -123,6 +125,7 @@ display: flex;
                 height: 100px;
                 width: 300px;
                 box-shadow: 1px 1px 8px #888888;
+                z-index: 5;
                 &_p1{
                     font-size: 15px;
                     font-weight: $font-semi-bold;
