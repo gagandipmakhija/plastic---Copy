@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    &_head{
+display: flex;
+        &_crum{
+            background-color: rgb(187, 4, 4);
+            width: 5.5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 8px;
+            padding-bottom: 5px;
+            &_para{
+                font-size: 18px;
+                color: white;
+            }
+        }
+        &_details{
+            border: 1px solid rgb(214, 214, 214);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            &_icon{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 30%;
+                @media (max-width:1100px){
+                    display: none;
+                }
+            }
+        }
+    }
+    &_title{
+        border: 1px solid rgb(214, 214, 214);
+        padding: 5px;
+        h1{
+            color: rgb(187, 4, 4);
+            margin-left: 90px;
+            font-size: 30px;
+            font-weight: $font-semi-bold;
+            @media (max-width:768px){
+                font-size: 15px;
+            }
+        }
+    }
+    &_nav{
+        border: 1px solid rgb(214, 214, 214);
+        background-color: rgb(238, 234, 234);
+        display: flex;
+        padding: 10px;
+        @media (max-width:925px){
+            display: none;
+        }
+        &_paras2{
+            font-size: 20px;
+            margin-left: 90px;
+            position:relative;
+            &_drop2{
+                position: absolute;
+                left: 630px;
+                top: 25.5%;
+                display: none;
+                border:1px solid rgb(219, 219, 219);
+                background-color: white;
+                height: 100px;
+                width: 300px;
+                box-shadow: 1px 1px 8px #888888;
+                &_p3{
+                    font-size: 15px;
+                    font-weight: $font-semi-bold;
+                    padding: 5px;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                }
+            }
+        }
+        &_paras1{
+            font-size: 20px;
+            margin-left: 90px;
+            position:relative;
+            &_drop1{
+                position: absolute;
+                left: 450px;
+                top: 25.5%;
+                display: none;
+                border:1px solid rgb(219, 219, 219);
+                background-color: white;
+                height: 280px;
+                width: 300px;
+                box-shadow: 1px 1px 8px #888888;
+                &_p2{
+                    font-size: 15px;
+                    font-weight: $font-semi-bold;
+                    padding: 5px;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                }
+            }
+        }
+        &_para{
+            font-size: 20px;
+            font-weight: $font-bold;
+            margin-left: 90px;
+        }
+        &_paras{
+            font-size: 20px;
+            margin-left: 90px;
+            position:relative;
+            &_drop{
+                position: absolute;
+                left: 280px;
+                top: 25.5%;
+                display: none;
+                border:1px solid rgb(219, 219, 219);
+                background-color: white;
+                height: 100px;
+                width: 300px;
+                box-shadow: 1px 1px 8px #888888;
+                &_p1{
+                    font-size: 15px;
+                    font-weight: $font-semi-bold;
+                    padding: 5px;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+.fa-bars{
+    font-size: 35px;    
+    color: white;
+}
+img{
+    height: 60px;
+    width: 200px;
+    margin-left: 10px;
+}
+.fa-dollar-sign{
+    color: rgb(187, 4, 4);
+}
+.fa-gift{
+    color: rgb(187, 4, 4);
+}
+.fa-user-circle{
+    color: rgb(187, 4, 4);
+}
+.fa-search{
+    color: rgb(187, 4, 4);
+    font-size: 25px;
+}
+span{
+    color: $grey44;
+}
+span:hover{
+    color:rgb(187, 4, 4);
+    cursor:pointer
+}
+.header_nav_paras:hover{
+    color:rgb(187, 4, 4);
+    cursor: pointer;
+}
+.header_nav_paras1:hover{
+    color:rgb(187, 4, 4);
+    cursor: pointer;
+}
+.header_nav_paras2:hover{
+    color:rgb(187, 4, 4);
+    cursor: pointer;
+}
