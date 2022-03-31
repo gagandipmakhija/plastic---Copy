@@ -1,5 +1,14 @@
 .meetteam{
     margin-top: -50px;
+    position: relative;
+    &_para{
+position: absolute;
+top: 400px;
+padding-left:50px;
+padding-right: 50px;
+color: rgb(190, 190, 190);
+font-size: 15px;
+    }
 h1{
     text-align: center;
     font-size: 28px;
@@ -31,18 +40,38 @@ button{
     width: 100%;
     background-color:white ;
     position: relative;
-    z-index: 15;
+    z-index: 5;
     &_cards{
         width:100%;
+        display: flex;
+        justify-content: space-evenly;
+           position: absolute;
+            top:50px;
+            &_cosmetics{
+                background-color: black;
+                width:30%;
+                padding: 50px;
+                border-top-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+                &_head{
+                    color:white;
+                    font-size: 23px;
+                    font-family: $openSans;
+                    font-weight: $font-medium;
+                    margin-bottom: 30px;
+                }
+                &_para{
+                    color: rgb(190, 190, 190);
+                    font-size: 20px;
+                }
+            }
+            
         &_reconstructive{
             background-color: black;
             width:30%;
             padding: 50px;
             border-top-left-radius: 50px;
             border-bottom-right-radius: 50px;
-            position: absolute;
-            top:50px;
-            left: 20%;
             &_head{
                 color:white;
                 font-size: 23px;
