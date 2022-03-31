@@ -18,13 +18,33 @@ const drop=()=>{
         $(".contact_details_services_toggle").css("display","none")
      
     })
-
-    document.querySelector(".header_nav_paras").addEventListener("mouseover",function(){
+   var headerNavLinks = document.querySelectorAll('.header_nav_paras')
+   console.log(headerNavLinks);
+   headerNavLinks.forEach(function(headerNavLink){
+   headerNavLink.addEventListener("mouseover",function(){
+    //    alert("mouseover")
        document.querySelector(".header_nav_paras_drop").style.display="block"
-       document.querySelector(".header_nav_paras_drop").addEventListener("mouseleave",function(){
-            document.querySelector(".header_nav_paras_drop").style.display="none"
-         })
-    })
+   })
+   })
+   var headerNavLinks = document.querySelectorAll('.header_nav_paras')
+   console.log(headerNavLinks);
+   headerNavLinks.forEach(function(headerNavLink){
+   headerNavLink.addEventListener("mouseleave",function(){
+    //    alert("mouseover")
+       document.querySelector(".header_nav_paras_drop").style.display="none"  })
+   })
+
+
+    // document.querySelector(".header_nav_paras").addEventListener("mouseover",function(){
+    //    document.querySelector(".header_nav_paras_drop").style.display="block"
+         
+    // })
+    // document.querySelector(".header_nav_paras_drop").addEventListener("mouseleave",function(){
+    //     document.querySelector(".header_nav_paras_drop").style.display="none"
+    // })
+    // document.querySelector(".header_nav_paras").addEventListener("mouseleave",function(){
+    //     document.querySelector(".header_nav_paras_drop").style.display="none"
+    // })
 
     
      document.querySelector(".header_nav_paras1").addEventListener("mouseover",function(){
